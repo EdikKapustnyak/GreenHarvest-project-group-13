@@ -1,10 +1,10 @@
 
-
 img {
     max-width: 100%;
     height: auto;
     display: block;
   }
+
 /* Mobile style */
 
 .callback{
@@ -149,11 +149,14 @@ img {
 .social{
     border-radius: 30px;
     padding: 40px 20px;
-    max-width: 335px;
-    height: 456px;
+    max-width: 524px;
+    height: auto;
     background: #7a3145;
-} 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+} 
 
 .social-img{
     border-radius: 15px;
@@ -180,7 +183,6 @@ img {
 }
 
 .social-item{
-    
     padding-bottom: 8px;
     font-weight: 600;
     font-size: 18px;
@@ -194,8 +196,6 @@ img {
     content: " /"; 
     margin-left: 8px; 
 }
-
-
 
 /* Tablet style */
 
@@ -222,16 +222,30 @@ img {
     
      .flex {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        /* align-items: center; */
+        gap: 32px;
     } 
 
-    .form-section {
-        padding: 72px 100px;
-        max-width: 640px;
-        margin-bottom: 32px;
-      
+    .form-section,
+    .social {
+        flex: 1;
+        padding: 72px 100px; 
+        max-width: 524px;
+        min-width: 300px;
     } 
+
+    @media only screen and (min-width: 768px) and (max-width: 1279px) {
+        .flex {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .form-section,
+        .social {
+            max-width: 640px;
+        }
+    }  
 
     h2 {
         font-size: 32px;
@@ -331,7 +345,9 @@ img {
     .contact-form{
         gap: 16px;
     }
-
+    .input-comment{
+        margin-bottom: 24px;
+    }
     .social {
         padding: 52px 48px;
         max-width: 524px;  
