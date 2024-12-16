@@ -152,5 +152,6 @@
 @media only screen and (min-width: 1280px) {
   .hero-text {
     max-width: 450px;
+    
   }
 }
