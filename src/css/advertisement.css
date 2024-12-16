@@ -1,3 +1,46 @@
 .discount { 
-    background-color: brown;
-}
+    background-color:  #fbfbfb;
+  }
+  
+    .section-text {
+      color: #141414;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 52px;
+      letter-spacing: -.72px;
+      text-transform: uppercase;
+      max-width: 367px
+  }
+  
+  @media only screen and (min-width: 768px) {
+      .section-text {
+          font-size:64px;
+          line-height: 64px;
+          letter-spacing: -.96px;
+          max-width: 736px
+      }
+  }
+  
+  @media only screen and (min-width: 1280px) {
+      .section-text {
+          font-size:76px;
+          line-height: 76px;
+          letter-spacing: -1.14px;
+          max-width: 1064px
+      }
+  }
+  
+  .section-costume-text {
+      display: inline-block;
+      width: fit-content;
+      background-color: #576f35;
+      color: #fff;
+      border-radius: 10px
+  }
+  
+  @media only screen and (min-width: 1280px) {
+      .section-costume-text {
+          padding-left:16px;
+          margin-left: -16px
+      }
+  }
