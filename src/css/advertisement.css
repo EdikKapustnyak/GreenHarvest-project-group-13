@@ -1,6 +1,18 @@
 .discount { 
     background-color:  #fbfbfb;
+    padding: 80px 20px;
   }
+  @media only screen and (min-width: 768px) {
+    .discount { 
+      padding: 100px 32px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+  .discount { 
+    
+    padding: 100px;
+  }
+}
   
     .section-text {
       color: #141414;
