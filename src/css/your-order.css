@@ -55,7 +55,6 @@ ul {
     max-width: 335px;
     margin-bottom: 20px;
 }
-
 .form-description {
     font-weight: 600;
     font-size: 28px; 
@@ -65,7 +64,6 @@ ul {
     color: #141414;
     margin-bottom: 40px;
 }
-
 @media only screen and (min-width: 320px) and (max-width: 768px) {
     .form-description {
       font-size: 28px;
