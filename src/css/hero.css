@@ -145,13 +145,12 @@
 
 @media only screen and (min-width: 1280px) {
   .hero-title {
-    max-width: 502px;
+    max-width: 504px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .hero-text {
     max-width: 450px;
-    
   }
 }
