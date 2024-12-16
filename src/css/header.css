@@ -151,9 +151,14 @@
         opacity: 0;
         pointer-events: none;
         visibility: hidden;
+        overflow-y: auto;
         transform: translateX(100%) scale(0.5);
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         transition-property: transform, opacity, visibility, scale;
+}
+
+.mobile-tablet-menu.hidden {
+    overflow-y: hidden;
 }
 
 .mobile-tablet-menu.is-open {
@@ -225,7 +230,7 @@
 
 .menu-shop-button {
         background-color: #7A3145;
-        margin: 0 auto;
+        margin-top: 52px;
         color: #fbfbfb;
         font-size: 18px;
         font-weight: 600;
@@ -281,6 +286,7 @@
         .menu-shop-button {
                 min-width: 157px;
                 padding: 16px 32px;
+                margin-top: 48px;
         }
 }
 
