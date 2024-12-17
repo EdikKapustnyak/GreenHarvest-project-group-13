@@ -2,35 +2,28 @@
 
 .hero-section {
   position: relative;
-  background: #576f35;
-  height: 840px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 40px;
+  background-color: #576f35;
 }
 
 .hero-content-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  padding: 100px 0px 0px 0px;
+  padding-top: 100px;
+  padding-bottom: 40px;
 }
 
 .hero-image-wrapper {
-  background: rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2),
+  background-image: rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2),
     url(../img/hero_img/hero-image_mob@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 100%;
   height: 372px;
+  /* max-width: 375px;
+  margin: 0 auto; */
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero-image-wrapper {
     background-image: url(../img/hero_img/hero-image_mob@2x.jpg);
   }
@@ -47,13 +40,11 @@
   margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 374px) {
+@media only screen and (max-width: 374px) {
   .hero-title {
     font-size: 42px;
-    max-width: 320px;
   }
 }
-
 .hero-text {
   font-weight: 500;
   font-size: 14px;
@@ -65,37 +56,33 @@
 /*Tablet*/
 
 @media only screen and (min-width: 768px) {
-  .hero-section {
-    gap: 52px;
-    height: 1020px;
+  .hero-content-wrapper {
+    padding-top: 120px;
+    padding-bottom: 52px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .hero-content-wrapper {
-    padding: 120px 0px 0px 0px;
-  }
-}
-
-.hero-image-wrapper {
-  background: rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2),
-    url(../img/hero_img/hero-image_tab@1x.jpg);
-  width: 100%;
-  height: 536px;
-}
-
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
   .hero-image-wrapper {
-    background-image: url(../img/hero_img/hero-image_tab@2x.jpg);
+    background-image: rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2),
+      url(../img/hero_img/hero-image_tab@1x.jpg);
+    height: 536px;
+    /* max-width: 768px; */
+  }
+
+  @media only screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-image-wrapper {
+      background-image: url(../img/hero_img/hero-image_tab@2x.jpg);
+    }
   }
 }
 
 @media only screen and (min-width: 768px) {
   .hero-title {
     font-size: 76px;
-    line-height: 1;
+    margin-bottom: 24px;
     max-width: 704px;
   }
 }
@@ -111,53 +98,47 @@
 /*Desktop*/
 
 @media only screen and (min-width: 1280px) {
-  .hero-section {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    height: 796px;
-    gap: 38px;
+  .hero-container {
+    display: flex;
+    /* margin: 0 auto;
+    max-width: 1280px; */
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .hero-content-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 128px;
-    padding: 0px 0px 52px 0px;
-    width: 504px;
-    margin-top: 232px;
+    padding-top: 232px;
+    width: 50%;
   }
 }
 
-.hero-image-wrapper {
-  background: rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2),
-    url(../img/hero_img/hero-image_desk@1x.jpg);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  width: 100%;
-  height: 796px;
-}
-
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+@media only screen and (min-width: 1280px) {
   .hero-image-wrapper {
-    background-image: url(../img/hero_img/hero-image_desk@2x.jpg);
+    background-image: rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2),
+      url(../img/hero_img/hero-image_desk@1x.jpg);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    width: 50%;
+    height: 796px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-image-wrapper {
+      background-image: url(../img/hero_img/hero-image_desk@2x.jpg);
+    }
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .hero-title {
-    max-width: 504px;
+    width: 504px;
+    margin-bottom: 128px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .hero-text {
-    max-width: 450px;
+    width: 450px;
   }
 }
