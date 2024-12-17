@@ -1,3 +1,4 @@
+
 /*Mobile*/
 
 .hero-section {
@@ -26,12 +27,17 @@
   background-position: center;
   max-width: 100%;
   height: 372px;
+  background-position: 0% 100%;
+  background-size: 100%;
+  padding-top: 100px;
+  padding-bottom: 412px;
 }
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .hero-image-wrapper {
+  .hero-section {
     background-image: url(../img/hero_img/hero-image_mob@2x.jpg);
   }
 }
@@ -89,6 +95,58 @@
 (min-resolution: 2dppx) {
   .hero-image-wrapper {
     background-image: url(../img/hero_img/hero-image_tab@2x.jpg);
+  }
+
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    padding-top: 120px;
+    padding-bottom: 588px;
+    background-image: url(../img/hero_img/hero-image_tab@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url(../img/hero_img/hero-image_tab@2x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-section {
+    padding-top: 232px;
+    padding-bottom: 52px;
+    background-image: url(../img/hero_img/hero-image_desk@1x.jpg);
+    background-position: 100% 0%;
+    background-size: 50%;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url(../img/hero_img/hero-image_desk@2x.jpg);
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  max-width: 335px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .hero-title {
+    font-size: 42px;
+    max-width: 320px;
   }
 }
 
@@ -153,6 +211,27 @@
 @media only screen and (min-width: 1280px) {
   .hero-title {
     max-width: 504px;
+  .hero-title {
+    max-width: 502px;
+    margin-bottom: 128px;
+  }
+}
+
+.hero-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fbfbfb;
+  max-width: 335px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-text {
+    font-size: 16px;
+    line-height: 1.25;
+    max-width: 603px;
+    margin-bottom: 52px;
   }
 }
 
