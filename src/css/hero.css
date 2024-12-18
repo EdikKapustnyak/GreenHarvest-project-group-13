@@ -1,3 +1,4 @@
+/*Mobile*/
 
 .hero-section {
   position: relative;
@@ -44,6 +45,7 @@
     font-size: 42px;
   }
 }
+
 .hero-text {
   font-weight: 500;
   font-size: 14px;
@@ -51,6 +53,7 @@
   color: #fbfbfb;
   max-width: 335px;
 }
+
 
 /*Tablet*/
 
@@ -93,6 +96,7 @@
     max-width: 603px;
   }
 }
+
 
 /*Desktop*/
 
