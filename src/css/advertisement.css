@@ -18,7 +18,7 @@ color: #FBFBFB;
 .discount-part::before {
 content: "Discount up to 40%!";
 background-color: #576F35;
-width: 335px;
+max-width: 335px;
 height: 102px;
 border-radius: 12px;
 display: block;
@@ -35,7 +35,7 @@ position: absolute;
 }
 .discount-part::before{
         padding-top: 20px;
-        width: 675px;
+        max-width: 675px;
         height: 86px;
         top: -20px;
 }
@@ -46,7 +46,7 @@ position: absolute;
         max-width: 1054px;
 }
 .discount-part::before {
-        width: 808px;
+        max-width: 808px;
         height: 84px;
         padding-left: 14px;
         padding-top: 4px;
