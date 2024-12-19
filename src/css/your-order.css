@@ -9,7 +9,6 @@ ul {
     padding: 0; 
     list-style: none; 
     max-width: 100%; 
-    overflow: hidden; 
     box-sizing: border-box; 
 }
 
@@ -123,6 +122,11 @@ ul {
 .input-email:placeholder-shown {
     border-color: #858585; 
 }  
+
+  
+.input-email:focus{
+    border-color: #7a3145; 
+} 
   
 /* .input-email:focus{
     border-color: #7a3145; 
@@ -155,7 +159,8 @@ input:focus,
 textarea:focus{
     border: 1px solid #858585;
     box-shadow: 0 0 5px rgba(122, 49, 69, 0.3)
-} 
+}
+
 .submit-button {
     border-radius: 30px;
     border: inherit;
@@ -219,6 +224,10 @@ textarea:focus{
     gap: 8px; 
     list-style: none;
 }
+/* .social-list:focus{
+    outline: none; 
+    background-color: #D4BFC4;
+}  */
 
 .social-item{
     font-weight: 600;
