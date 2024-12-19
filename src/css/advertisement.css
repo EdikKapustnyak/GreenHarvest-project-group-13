@@ -10,21 +10,18 @@
     text-align: left;
     max-width: 335px;
     text-transform: uppercase;
-  
-  
   }
   
   
     
   .advertisement-text {
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.015em;
-  text-align: left;
-  max-width: 335px;
-  text-transform: uppercase;
-  
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    text-align: left;
+    max-width: 335px;
+    text-transform: uppercase;
   }
   
   .advertisement {
@@ -34,7 +31,7 @@
   }
   
   
-     .advertisement-accent::before {
+.advertisement-accent::before {
     content: ""; 
     position: absolute; 
     top: 0;
@@ -45,58 +42,57 @@
     z-index: -1; 
     border-radius: 12px; 
     padding: 0;
-     }
+}
   
-     @media only screen and (min-width: 768px) {
-        .advertisement-accent { 
-            font-size: 64px;
-            line-height: 1;
-            max-width: 704px;
-        }
+@media only screen and (min-width: 768px) {
+    .advertisement-accent { 
+        line-height: 1;
+        max-width: 704px;
+        font-size: 64px;
+    }
+        
+    .advertisement-text {
+        font-size: 64px;
+        max-width: 704px;
+        line-height: 1;
+    }
+        
+    .advertisement {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
   
-        .advertisement-text {
-            font-size: 64px;
-            line-height: 1;
-            max-width: 704px;
-            }
+    .advertisement-accent::before {
+        height: calc(100% + 20px); 
+        top: -20px;
+    }
+}
+    
+@media only screen and (min-width: 1280px) {
+    .advertisement-accent { 
+        font-size: 76px;
+        max-width: 1054px;
+        line-height: 1;
+    }
+    .advertisement-text {
+        line-height: 1;
+        max-width: 1054px;
+        font-size: 76px;
+    }
+        
+    
+    .advertisement-accent::before {
+        width: calc(100% + 19px);
+        height: calc(100% + 8px); 
+        top: -4px;
+        left: -16px;
+        right: -3px;
+        bottom: -4px;
+    }
   
-            .advertisement {
-            
-                padding-top: 100px;
-                padding-bottom: 100px;
-            }
-  
-            .advertisement-accent::before {
-                height: calc(100% + 20px); 
-                top: -20px;
-                 }
-  
-     }
-  
-     @media only screen and (min-width: 1280px) {
-        .advertisement-accent { 
-            font-size: 76px;
-            line-height: 1;
-            max-width: 1054px;
-        }
-        .advertisement-text {
-            font-size: 76px;
-            line-height: 1;
-            max-width: 1054px;
-            }
-  
-     
-            .advertisement-accent::before {
-                height: calc(100% + 8px); 
-                width: calc(100% + 19px);
-                left: -16px;
-                top: -4px;
-                bottom: -4px;
-                right: -3px;
-  
-            }
-  .advertisement-wrapper {
-    padding-left: 14px;
-    padding-right: 10px;
-  }
-     }
+    .advertisement-wrapper {
+        padding-left: 14px;
+        padding-right: 10px;
+    }
+}
