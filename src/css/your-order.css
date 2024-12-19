@@ -9,7 +9,6 @@ ul {
     padding: 0; 
     list-style: none; 
     max-width: 100%; 
-    overflow: hidden; 
     box-sizing: border-box; 
 }
 
@@ -154,6 +153,7 @@ input:focus,
 textarea:focus{
     border: 1px solid #7a3145;
 } 
+
 .submit-button {
     border-radius: 30px;
     border: inherit;
