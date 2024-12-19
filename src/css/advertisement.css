@@ -1,3 +1,102 @@
-.discount { 
-    background-color: brown;
-}
+.advertisement-accent { 
+    position: relative; 
+    display: inline-block; 
+    z-index: 1; 
+    color: #FBFBFB;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    text-align: left;
+    max-width: 335px;
+    text-transform: uppercase;
+  
+  
+  }
+  
+  
+    
+  .advertisement-text {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  text-align: left;
+  max-width: 335px;
+  text-transform: uppercase;
+  
+  }
+  
+  .advertisement {
+    background-color: #FBFBFB;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  
+     .advertisement-accent::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #576F35; 
+    z-index: -1; 
+    border-radius: 12px; 
+    padding: 0;
+     }
+  
+     @media only screen and (min-width: 768px) {
+        .advertisement-accent { 
+            font-size: 64px;
+            line-height: 1;
+            max-width: 704px;
+        }
+  
+        .advertisement-text {
+            font-size: 64px;
+            line-height: 1;
+            max-width: 704px;
+            }
+  
+            .advertisement {
+            
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+  
+            .advertisement-accent::before {
+                height: calc(100% + 20px); 
+                top: -20px;
+                 }
+  
+     }
+  
+     @media only screen and (min-width: 1280px) {
+        .advertisement-accent { 
+            font-size: 76px;
+            line-height: 1;
+            max-width: 1054px;
+        }
+        .advertisement-text {
+            font-size: 76px;
+            line-height: 1;
+            max-width: 1054px;
+            }
+  
+     
+            .advertisement-accent::before {
+                height: calc(100% + 8px); 
+                width: calc(100% + 19px);
+                left: -16px;
+                top: -4px;
+                bottom: -4px;
+                right: -3px;
+  
+            }
+  .advertisement-wrapper {
+    padding-left: 14px;
+    padding-right: 10px;
+  }
+     }
